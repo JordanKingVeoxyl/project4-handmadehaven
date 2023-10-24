@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-jordankingv-project4han-suz3pspvsus.ws-eu105.gitpod.io', 'project4-handmadehaven', 'localhost']
+ALLOWED_HOSTS = ['8000-jordankingv-project4han-suz3pspvsus.ws-eu105.gitpod.io', 'project4-handmadehaven-eea206e82b91.herokuapp.com', 'project4-handmadehaven', 'localhost']
 
 
 # Application definition
