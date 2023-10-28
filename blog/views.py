@@ -1,8 +1,17 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Item
 from .forms import ItemForm
+from django.views import generic
+from .models import Post
 
 # Create your views here.
+
+
+class PostList(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'index.html'
+    paginate_by = 6
 
 
 def get_blog_list(request):
