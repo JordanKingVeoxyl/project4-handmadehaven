@@ -19,6 +19,7 @@ from blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include("blog.urls"), name="blog_urls"),
     path('summernote/', include('django_summernote.urls')),
     path('', views.get_blog_list, name='get_blog_list'),
     path('add', views.add_item, name='add'),
